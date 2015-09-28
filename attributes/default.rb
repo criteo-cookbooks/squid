@@ -38,6 +38,9 @@ default['squid']['cache_mem'] = "2048"
 default['squid']['cache_size'] = "100"
 default['squid']['maximum_object_size'] = "1024"
 
+# Defaults to system defaults
+default['squid']['max_file_descriptors'] = nil
+
 case platform_family
 
 when "debian"
